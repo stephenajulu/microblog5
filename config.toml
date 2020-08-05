@@ -1,0 +1,74 @@
+languageCode = "en-us"
+baseURL = "https://example.com"
+title = "Ajulu's Microblog"
+theme = "hugo-notepadium"
+copyright = "©2020 Ajulu's MicroBlog."
+
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = "XXX"
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[params]
+style = "dark"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+logo = ""  # if you have a logo png
+slogan = "Short Notes, Tips, Ideas, Updates, Links, Photos and oth6er content"
+license = ""  # CC License
+fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = "katex"  # option: "katex", "mathjax". default: "katex"
+
+[params.syntax]
+use = "prismjs"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "xcode"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[params.share]
+enable = false
+addThisId = ""
+inlineToolId = ""
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom navigation items
+
+[[params.nav.custom]]
+title = "About"
+url = "/about"
+
+[[params.nav.custom]]
+title = "Hugo"
+url = "https://gohugo.io/"
+
+# for chinese
+[params.beian]
+  icp = ""     # example: 粤ICP备20056596号-1
+  gongan = ""  # example: 粤公网安备 44030502005645号
+  code = ""    # example: 44030502005645
+
+[params.profile]
+  enable = true
+  avatar = "#"
+  name = "Stephen Ajulu"
+  bio = "Front End Web Developer, Graphic Designer, Content Creator, Junior Cybersecurity Consultant and Major Tinkerer hence this blog being my place to share discoveries"  # support markdown syntax
+  twitter = "stephenajulu"  # https://twitter.com/stephenajulu
+  github = "stephenajulu"  # https://github.com/XXX
+  email = "alunje73@gmail.com"  # mailto:XXX@mail.com
